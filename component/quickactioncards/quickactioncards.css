@@ -1,0 +1,137 @@
+/* ===== LAYOUT PRINCIPAL ===== */
+
+.quick-action-cards {
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+/* ===== QUICK ACTIONS ===== */
+
+.quick-action-wrapper {
+    flex: 2;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.card-content-action {
+    margin-bottom: 16px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* GRID 2x2 */
+.quick-action-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.quick-action-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* CARD */
+.card-action {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.card-action:hover {
+    border-color: #2563eb;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.card-icon {
+    color: #2563eb;
+}
+
+.card-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111827;
+}
+
+.card-description {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+/* ===== RECENT ACTIVITY ===== */
+
+.recent-activity {
+    flex: 1;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.recent-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.recent-subtitle {
+    font-size: 13px;
+    color: #6b7280;
+    margin-bottom: 12px;
+}
+
+.recent-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.recent-main {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #111827;
+}
+
+.recent-main svg {
+    color: #2563eb;
+}
+
+.recent-time {
+    font-size: 12px;
+    color: #6b7280;
+    margin-left: 22px;
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 1024px) {
+    .quick-action-cards {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 640px) {
+    .quick-action-grid {
+        grid-template-columns: 1fr;
+    }
+}
